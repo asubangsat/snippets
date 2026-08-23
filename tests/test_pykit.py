@@ -38,3 +38,8 @@ def test_human_size():
 def test_chunk():
     from pykit.collections import chunk
     assert chunk([1, 2, 3, 4, 5], 2) == [[1, 2], [3, 4], [5]]
+
+
+def test_flatten():
+    from pykit.collections import flatten
+    assert flatten([[1, 2], [3]]) == [1, 2, 3]

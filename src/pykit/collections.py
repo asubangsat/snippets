@@ -19,3 +19,8 @@ def group_by(items: Iterable[Any], key) -> dict:
 def chunk(items: list, size: int) -> list[list]:
     """Split a list into chunks of at most `size` items."""
     return [items[i : i + size] for i in range(0, len(items), size)]
+
+
+def flatten(nested: Iterable[Iterable[Any]]) -> list:
+    """Flatten one level of nesting."""
+    return [x for sub in nested for x in sub]
