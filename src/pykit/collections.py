@@ -14,3 +14,8 @@ def group_by(items: Iterable[Any], key) -> dict:
     for item in items:
         out.setdefault(key(item), []).append(item)
     return out
+
+
+def chunk(items: list, size: int) -> list[list]:
+    """Split a list into chunks of at most `size` items."""
+    return [items[i : i + size] for i in range(0, len(items), size)]
