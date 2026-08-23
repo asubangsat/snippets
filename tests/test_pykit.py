@@ -22,3 +22,9 @@ def test_ordinal():
     assert ordinal(1) == "1st"
     assert ordinal(11) == "11th"
     assert ordinal(23) == "23rd"
+
+
+def test_group_by():
+    from pykit.collections import group_by
+    got = group_by(["ant", "bee", "asp"], key=lambda w: w[0])
+    assert got == {"a": ["ant", "asp"], "b": ["bee"]}
