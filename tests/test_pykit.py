@@ -28,3 +28,8 @@ def test_group_by():
     from pykit.collections import group_by
     got = group_by(["ant", "bee", "asp"], key=lambda w: w[0])
     assert got == {"a": ["ant", "asp"], "b": ["bee"]}
+
+
+def test_human_size():
+    from pykit.numbers import human_size
+    assert human_size(2048) == "2.0 KB"
