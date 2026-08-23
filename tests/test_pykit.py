@@ -15,3 +15,10 @@ def test_truncate():
 def test_clamp():
     assert clamp(5, 0, 3) == 3
     assert clamp(-1, 0, 3) == 0
+
+
+def test_ordinal():
+    from pykit.numbers import ordinal
+    assert ordinal(1) == "1st"
+    assert ordinal(11) == "11th"
+    assert ordinal(23) == "23rd"
