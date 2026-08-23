@@ -33,3 +33,8 @@ def test_group_by():
 def test_human_size():
     from pykit.numbers import human_size
     assert human_size(2048) == "2.0 KB"
+
+
+def test_chunk():
+    from pykit.collections import chunk
+    assert chunk([1, 2, 3, 4, 5], 2) == [[1, 2], [3, 4], [5]]
