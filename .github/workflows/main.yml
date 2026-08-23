@@ -1,0 +1,41 @@
+name: nightly maintenance
+
+on:
+  schedule:
+    # UTC times -> 08:23, 12:48, 16:11, 20:37 WIB (looks like normal coding hours)
+    - cron: "23 1 * * *"
+    - cron: "48 5 * * *"
+    - cron: "11 9 * * *"
+    - cron: "37 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-commit
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Configure git identity
+        run: |
+          git config user.name "asubangsat"
+          git config user.email "imansantoso7755@gmail.com"
+
+      - name: Make changes
+        run: python scripts/auto_commit.py
+        env:
+          # manual runs always commit, scheduled runs may randomly skip
+          AUTO_FORCE: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+
+      - name: Push
+        run: git push
