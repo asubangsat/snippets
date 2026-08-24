@@ -21,3 +21,8 @@ def humanize_delta(seconds: int) -> str:
 def start_of_day(dt: datetime) -> datetime:
     """Return the datetime at 00:00:00 of the same day."""
     return dt.replace(hour=0, minute=0, second=0, microsecond=0)
+
+
+def days_between(a: date, b: date) -> int:
+    """Absolute number of days between two dates."""
+    return abs((b - a).days)

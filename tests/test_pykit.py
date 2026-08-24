@@ -61,3 +61,9 @@ def test_start_of_day():
 def test_slugify():
     from pykit.strings import slugify
     assert slugify("Hello, World!") == "hello-world"
+
+
+def test_days_between():
+    from datetime import date
+    from pykit.dates import days_between
+    assert days_between(date(2024, 1, 1), date(2024, 1, 11)) == 10
