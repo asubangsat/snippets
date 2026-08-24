@@ -43,3 +43,9 @@ def test_chunk():
 def test_flatten():
     from pykit.collections import flatten
     assert flatten([[1, 2], [3]]) == [1, 2, 3]
+
+
+def test_humanize_delta():
+    from pykit.dates import humanize_delta
+    assert humanize_delta(30) == "30s"
+    assert humanize_delta(7200) == "2h"
