@@ -16,3 +16,8 @@ def humanize_delta(seconds: int) -> str:
     if seconds < 86400:
         return f"{seconds // 3600}h"
     return f"{seconds // 86400}d"
+
+
+def start_of_day(dt: datetime) -> datetime:
+    """Return the datetime at 00:00:00 of the same day."""
+    return dt.replace(hour=0, minute=0, second=0, microsecond=0)
