@@ -49,3 +49,10 @@ def test_humanize_delta():
     from pykit.dates import humanize_delta
     assert humanize_delta(30) == "30s"
     assert humanize_delta(7200) == "2h"
+
+
+def test_start_of_day():
+    from datetime import datetime
+    from pykit.dates import start_of_day
+    d = start_of_day(datetime(2024, 3, 5, 14, 30))
+    assert (d.hour, d.minute) == (0, 0)
