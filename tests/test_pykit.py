@@ -56,3 +56,8 @@ def test_start_of_day():
     from pykit.dates import start_of_day
     d = start_of_day(datetime(2024, 3, 5, 14, 30))
     assert (d.hour, d.minute) == (0, 0)
+
+
+def test_slugify():
+    from pykit.strings import slugify
+    assert slugify("Hello, World!") == "hello-world"
