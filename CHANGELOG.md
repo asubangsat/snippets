@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `chunk` to collections
+
 - add `ordinal` to numbers
 
 - minor docstring cleanups
