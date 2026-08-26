@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `ordinal` to numbers
+
 - minor docstring cleanups
 
 - expand test coverage
