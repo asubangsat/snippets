@@ -83,3 +83,8 @@ def test_pluralize():
 def test_unique():
     from pykit.collections import unique
     assert unique([1, 2, 1, 3, 2]) == [1, 2, 3]
+
+
+def test_lerp():
+    from pykit.numbers import lerp
+    assert lerp(0, 10, 0.5) == 5
