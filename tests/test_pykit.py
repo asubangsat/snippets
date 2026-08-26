@@ -78,3 +78,8 @@ def test_pluralize():
     from pykit.strings import pluralize
     assert pluralize(1, "item") == "1 item"
     assert pluralize(3, "item") == "3 items"
+
+
+def test_unique():
+    from pykit.collections import unique
+    assert unique([1, 2, 1, 3, 2]) == [1, 2, 3]
