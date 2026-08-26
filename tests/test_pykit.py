@@ -72,3 +72,9 @@ def test_days_between():
 def test_initials():
     from pykit.strings import initials
     assert initials("john doe") == "JD"
+
+
+def test_pluralize():
+    from pykit.strings import pluralize
+    assert pluralize(1, "item") == "1 item"
+    assert pluralize(3, "item") == "3 items"
