@@ -24,3 +24,14 @@ def chunk(items: list, size: int) -> list[list]:
 def flatten(nested: Iterable[Iterable[Any]]) -> list:
     """Flatten one level of nesting."""
     return [x for sub in nested for x in sub]
+
+
+def unique(items: Iterable[Any]) -> list:
+    """Deduplicate while preserving order."""
+    seen = set()
+    out = []
+    for x in items:
+        if x not in seen:
+            seen.add(x)
+            out.append(x)
+    return out
