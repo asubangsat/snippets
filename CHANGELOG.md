@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- misc fixes
+
 - add `chunk` to collections
 
 - add `ordinal` to numbers
