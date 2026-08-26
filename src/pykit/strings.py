@@ -19,3 +19,9 @@ def initials(name: str, limit: int = 2) -> str:
     """Get uppercase initials from a full name."""
     parts = [p for p in name.split() if p]
     return "".join(p[0].upper() for p in parts[:limit])
+
+
+def pluralize(count: int, singular: str, plural: str | None = None) -> str:
+    """Return '1 item' / '2 items' style strings."""
+    word = singular if count == 1 else (plural or singular + "s")
+    return f"{count} {word}"
