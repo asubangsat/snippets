@@ -21,3 +21,8 @@ def human_size(num_bytes: float) -> str:
             return f"{num_bytes:.1f} {unit}"
         num_bytes /= 1024
     return f"{num_bytes:.1f} PB"
+
+
+def lerp(a: float, b: float, t: float) -> float:
+    """Linear interpolation between a and b."""
+    return a + (b - a) * t
