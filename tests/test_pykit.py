@@ -88,3 +88,8 @@ def test_unique():
 def test_lerp():
     from pykit.numbers import lerp
     assert lerp(0, 10, 0.5) == 5
+
+
+def test_camel_to_snake():
+    from pykit.strings import camel_to_snake
+    assert camel_to_snake("someVarName") == "some_var_name"
