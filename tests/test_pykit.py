@@ -98,3 +98,8 @@ def test_camel_to_snake():
 def test_mask():
     from pykit.strings import mask
     assert mask("1234567890") == "******7890"
+
+
+def test_pick():
+    from pykit.collections import pick
+    assert pick({"a": 1, "b": 2}, ["a", "c"]) == {"a": 1}

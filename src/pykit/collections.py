@@ -35,3 +35,8 @@ def unique(items: Iterable[Any]) -> list:
             seen.add(x)
             out.append(x)
     return out
+
+
+def pick(d: dict, keys: Iterable[Any]) -> dict:
+    """Return a dict with only the given keys (if present)."""
+    return {k: d[k] for k in keys if k in d}
