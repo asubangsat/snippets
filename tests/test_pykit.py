@@ -93,3 +93,8 @@ def test_lerp():
 def test_camel_to_snake():
     from pykit.strings import camel_to_snake
     assert camel_to_snake("someVarName") == "some_var_name"
+
+
+def test_mask():
+    from pykit.strings import mask
+    assert mask("1234567890") == "******7890"
