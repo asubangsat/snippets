@@ -103,3 +103,9 @@ def test_mask():
 def test_pick():
     from pykit.collections import pick
     assert pick({"a": 1, "b": 2}, ["a", "c"]) == {"a": 1}
+
+
+def test_percent():
+    from pykit.numbers import percent
+    assert percent(1, 4) == 25.0
+    assert percent(1, 0) == 0.0

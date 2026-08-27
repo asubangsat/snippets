@@ -26,3 +26,10 @@ def human_size(num_bytes: float) -> str:
 def lerp(a: float, b: float, t: float) -> float:
     """Linear interpolation between a and b."""
     return a + (b - a) * t
+
+
+def percent(part: float, whole: float, digits: int = 1) -> float:
+    """Percentage of part in whole, safe against division by zero."""
+    if whole == 0:
+        return 0.0
+    return round(part / whole * 100, digits)
