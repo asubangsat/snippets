@@ -28,13 +28,7 @@ def flatten(nested: Iterable[Iterable[Any]]) -> list:
 
 def unique(items: Iterable[Any]) -> list:
     """Deduplicate while preserving order."""
-    seen = set()
-    out = []
-    for x in items:
-        if x not in seen:
-            seen.add(x)
-            out.append(x)
-    return out
+    return list(dict.fromkeys(items))
 
 
 def pick(d: dict, keys: Iterable[Any]) -> dict:
