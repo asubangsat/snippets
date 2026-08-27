@@ -25,3 +25,9 @@ def pluralize(count: int, singular: str, plural: str | None = None) -> str:
     """Return '1 item' / '2 items' style strings."""
     word = singular if count == 1 else (plural or singular + "s")
     return f"{count} {word}"
+
+
+def camel_to_snake(name: str) -> str:
+    """Convert CamelCase to snake_case."""
+    s1 = re.sub(r"(.)([A-Z][a-z]+)", r"\1_\2", name)
+    return re.sub(r"([a-z0-9])([A-Z])", r"\1_\2", s1).lower()
