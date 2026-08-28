@@ -17,8 +17,9 @@ def slugify(text: str) -> str:
 
 def initials(name: str, limit: int = 2) -> str:
     """Get uppercase initials from a full name."""
-    parts = [p for p in name.split() if p]
-    return "".join(p[0].upper() for p in parts[:limit])
+    parts = name.split()
+    letters = [p[0].upper() for p in parts if p]
+    return "".join(letters[:limit])
 
 
 def pluralize(count: int, singular: str, plural: str | None = None) -> str:
