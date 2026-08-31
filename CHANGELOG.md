@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- small internal cleanups
+
 - misc fixes
 
 - misc fixes
