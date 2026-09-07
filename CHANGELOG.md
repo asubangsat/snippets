@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `unique` to collections
+
 - misc fixes
 
 - misc fixes
