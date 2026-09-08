@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `humanize_delta` to dates
+
 ## 0.1.2
 
 - add `unique` to collections
