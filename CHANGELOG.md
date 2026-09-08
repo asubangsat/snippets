@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.1.2
+
 - add `unique` to collections
 
 - misc fixes
