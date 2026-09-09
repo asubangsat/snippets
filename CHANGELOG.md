@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- improve type hints in dates
+
 - misc fixes
 
 - improve type hints in strings
