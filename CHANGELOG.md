@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- misc fixes
+
 - improve type hints in collections
 
 - misc fixes
