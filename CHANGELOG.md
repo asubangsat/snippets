@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `percent` to numbers
+
 - misc fixes
 
 - misc fixes
