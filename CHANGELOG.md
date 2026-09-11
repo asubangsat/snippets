@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `group_by` to collections
+
 - misc fixes
 
 - misc fixes
