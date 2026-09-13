@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `pluralize` to strings
+
 - misc fixes
 
 - improve type hints in numbers
