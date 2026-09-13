@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- misc fixes
+
 - improve type hints in numbers
 
 - misc fixes
