@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- misc fixes
+
 - add `pluralize` to strings
 
 - misc fixes
