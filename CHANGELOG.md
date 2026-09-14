@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `days_between` to dates
+
 - misc fixes
 
 - misc fixes
