@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `start_of_day` to dates
+
 ## 0.1.3
 
 - misc fixes
