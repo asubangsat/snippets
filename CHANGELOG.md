@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `human_size` to numbers
+
 - misc fixes
 
 - misc fixes
