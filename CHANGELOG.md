@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `mask` to strings
+
 - misc fixes
 
 ## 0.1.4
