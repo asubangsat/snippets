@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- misc fixes
+
 - add `slugify` to strings
 
 - misc fixes
