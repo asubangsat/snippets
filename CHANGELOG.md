@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.1.8
+
 - misc fixes
 
 ## 0.1.7
