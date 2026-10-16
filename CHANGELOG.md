@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- add `pick` to collections
+
 - misc fixes
 
 - misc fixes
