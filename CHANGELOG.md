@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## 0.1.11
+
 - misc fixes
 
 - misc fixes
