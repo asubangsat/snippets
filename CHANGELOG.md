@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- misc fixes
+
 - add `initials` to strings
 
 - misc fixes
